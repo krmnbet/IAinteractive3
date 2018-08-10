@@ -1,0 +1,67 @@
+<html>
+	<head>
+		
+	<script src="libraries/jquery-1.10.2.min.js"></script>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+   <script src="js/usuarios.js"></script>
+	</head>
+	<body>
+		<style>
+		
+		</style>
+<div class="container">
+	
+<div id="divlogin_container" align="center">
+		<br>
+<div id="divlogin">
+
+		 <input
+            	class="form-control"
+            	placeholder="Correo"
+            	type="text"
+            	id="usuario"
+            	name="usuario"
+            	value="<?php echo $correo;?>">
+         
+            <br />
+			<input
+            	class="form-control"
+            	placeholder="Contraseña"
+         		type="password"
+         		AUTOCOMPLETE="off"
+         		id="clave"
+         		name="clave"
+         		value="<?php echo $clave;?>">
+         	<br /><br />
+              <button id="loginuser" class="btn btn-primary btn-lg btn-block" data-loading-text="<i class='fa fa-refresh fa-spin '></i>" type="button">
+                Login </button>
+                <br>
+			<a href="javascript:nuevoUser();" class="footerlink" style="text-align: center">Registrar nuevo usuario</a>
+            <br />
+          </div>
+	</div>
+</div>
+<div id="registro" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content panel-success">
+            <div class="modal-header panel-heading">
+                <h4 id="modal-label" id="">Registro de Usuario</h4>
+            </div>
+            <div class="modal-body" id="contenido">
+               
+            </div>
+             <div class="modal-footer">
+			    <button type="button" class="btn btn-default" data-dismiss="modal">
+			        <span class="glyphicon glyphicon-remove"></span>
+			        <span class="hidden-xs">Cerrar</span>
+			    </button>
+			
+			</div>
+        </div>
+    </div> 
+</div> 
+
+
+
+	</body>
+</html>
