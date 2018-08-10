@@ -26,6 +26,15 @@ class PeliculasModel extends Connection
             return 0;
         }
 	}
+	 function insertauser($user,$clave,$correo)
+	{
+		$myQuery = "insert  into usuarios(nombre,correo,contrasena) values ('".$user."','".$correo."','".$clave."');";
+		if($this->query($myQuery)){
+			return 1;
+        }else{
+            return 0;
+        }
+	}
 	 function listaPeli()
 	{
 		$myQuery = "SELECT * FROM peliculas;";

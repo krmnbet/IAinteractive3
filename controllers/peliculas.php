@@ -42,6 +42,12 @@ class Peliculas extends Common
 			echo 0;
 		}
 	}
+	function insertauser(){
+		
+		echo $this->PeliculasModel->insertauser($_REQUEST['usuario'],$_REQUEST['clave'],$_REQUEST['correo']);
+		
+	}
+	
 	function user()
 	{
 		$clave = $correo = "";

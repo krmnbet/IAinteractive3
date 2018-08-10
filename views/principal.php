@@ -16,13 +16,13 @@
 			<div class="col-md-2">
 		        <table>
 		        	
-		        		<tr >
+		        		<tr>
 		        			<th title="Sinopsis" rowspan="2">
 		        				<div class="col-md-3" style="">
 									<img src="poster/aqua.jpeg" onclick="javascript:window.location='index.php?c=Peliculas&f=verpeli&p=1'" style="display:block;cursor: pointer" scale="0">
 								</div>
 		        			</th>
-		        			<th>lkjskdajdlk</th>
+		        			
 		        			
 		        		</tr>
 		        	

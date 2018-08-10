@@ -62,7 +62,7 @@ Volver</button>
 	<hr>
 	<button id="" onclick="agregarComentario('idpeli')" class="btn btn-primary btn-sm" data-loading-text="<i class='fa fa-refresh fa-spin '></i>" type="button">
 	 Agregar Comentario </button>
-		
+		<br><br>
 	
 </body>
 <div id="modelcomentario" class="modal fade">

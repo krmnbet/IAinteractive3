@@ -9,22 +9,14 @@
 </head>
 	<body><br>
 		<div class="row">
-			<div class="col-xs-12">
-				<div class="panel panel-default">
+			<div class="col-xs-12 ">
+				<div class="panel panel-default col-md-10 col-md-offset-1">
 					<div class="panel-heading">
 						<div class="row">
 							<input type="hidden" name="valortomado" id="valortomado">
 							<div class="col-xs-12" style="margin-top: 10px">
 
-								<button
-									id="btn_nueva"
-									onclick="nueva()"
-									data-loading-text="<i class='fa fa-refresh fa-spin'></i>"
-									type="button"
-									class="btn btn-success btn-lg"
-									style="width: 170px; margin-top: 0.5%;">
-									<i class="fa fa-plus"></i> Agregar
-								</button>
+								
 								<button
 									id="btn_editar"
 									onclick="editar()"
@@ -52,8 +44,8 @@
 						</div>
 					</div>
 				<form id="formagregar">
-				    <div class="panel-body" style=""><br>
-				    	<h4 style="color: red">Agregando nueva Pelicula</h4><br>
+				    <div class="panel-body " style="" ><br>
+				    	<h4 style="color: red">Nueva Pelicula</h4><br>
 							<div class="col-md-3">
 								
 								<img id="imgSalida" width="50%" height="50%" src="" />	 <br />

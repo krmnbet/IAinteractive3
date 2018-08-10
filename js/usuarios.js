@@ -1,8 +1,8 @@
 function nuevoUser(){
 	$("#registro").modal('show');
 	
-	$('#contenido').empty();
-	$('#contenido').load('ajax.php?c=Peliculas&f=vistaRegistro');
+	// $('#contenido').empty();
+	// $('#contenido').load('index.php?c=Peliculas&f=vistaRegistro');
        
 
  }
@@ -28,20 +28,21 @@ $("#loginuser").on('click', function() {
 
      });
 	$("#crearuser").on('click', function() { 
-		var btnguardar = $(this);
-      	btnguardar.button("loading");
+		var btnguardar2 = $(this);
+      	btnguardar2.button("loading"); 
       	
-      	$.post("ajax.php?c=Peliculas&f=registroUsuario",{
-      		usuario:$("#usuario").val(),
-      		clave:$("#clave").val(),
+      	$.post("ajax.php?c=Peliculas&f=insertauser",{
+      		usuario:$("#newuser").val(),
+      		clave:$("#newclave").val(),
       		correo:$("#correo").val()
       	},function(r){
-      		if(r==0){
+      		if(r==1){
       			alert("Usuario registrado!");
+      			window.location ="index.php?c=Peliculas&f=user&clave="+$("#newclave").val()+"&correo="+$("#correo").val();
       		}else{
-      			window.location ="index.php?c=Peliculas&f=user&clave="+$("#clave").val()+"&correo="+$("#correo").val();
+      			alert("Error en registro");
       		}
-      		btnguardar.button('reset');
+      		btnguardar2.button('reset');
      	 });
 
 

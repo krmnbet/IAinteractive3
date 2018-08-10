@@ -3,7 +3,7 @@
 		
 	<script src="libraries/jquery-1.10.2.min.js"></script>
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-   <script src="js/usuarios.js"></script>
+   <script src="js/usuarios.js"></script><br />
 	</head>
 	<body>
 		<style>
@@ -48,9 +48,36 @@
                 <h4 id="modal-label" id="">Registro de Usuario</h4>
             </div>
             <div class="modal-body" id="contenido">
-               
+                <input
+            	class="form-control"
+            	placeholder="Nombre"
+            	type="text"
+            	id="newuser"
+            	name="newuser">
+         
+            <br />
+            <input
+            	class="form-control"
+            	placeholder="Correo"
+         		type="email"
+         		AUTOCOMPLETE="off"
+         		id="correo"
+         		name="correo">
+         		 <br />
+			<input
+            	class="form-control"
+            	placeholder="Contraseña"
+         		type="password"
+         		AUTOCOMPLETE="off"
+         		id="newclave"
+         		name="newclave">
+         		
+         	<br /><br />
             </div>
              <div class="modal-footer">
+			    <button id="crearuser" class="btn btn-primary" data-loading-text="<i class='fa fa-refresh fa-spin '></i>" data-dismiss="modal">
+			        <span class="hidden-xs">Crear</span>
+			    </button>
 			    <button type="button" class="btn btn-default" data-dismiss="modal">
 			        <span class="glyphicon glyphicon-remove"></span>
 			        <span class="hidden-xs">Cerrar</span>
